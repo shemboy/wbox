@@ -69,7 +69,7 @@ if (isset($_GET['action'])) {
         }
         .container {
             width: 100%;
-            max-width: 600px;
+            max-width: 700px; /* wider for desktop */
             background: #ffffff;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -103,13 +103,15 @@ if (isset($_GET['action'])) {
         }
         textarea {
             width: 100%;
-            font-size: 1.1rem;
+            font-size: 1.25rem; /* larger font for desktop */
             border-radius: 8px;
             box-sizing: border-box;
             resize: vertical;
-            min-height: 180px;
-            padding: 1rem;
+            min-height: 300px; /* taller for desktop */
+            padding: 1.2rem;
             border: 2px solid #ddd;
+            margin: 0;
+            max-width: 100%;
         }
         .primary-btn {
             background: #3498db;
